@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+.body-h {
+    height: calc(100vh - (var(--spacing) * 12));
+}
+
+.border-color {
+    border-color: var(--ui-border);
+}
+
+.gutter {
+    background-color: var(--ui-border);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.gutter-horizontal {
+    cursor: col-resize;
+}
+
+.gutter-vertical {
+    cursor: row-resize;
+}
+
+.ui-bg {
+    background-color: var(--ui-bg);
+    color: var(--ui-text);
+}
+
+.xterm {
+    height: 100%;
+}
+
+.ace_scroller {
+    background-color: var(--ui-bg) !important;
+}
+
+.ace_gutter {
+    background-color: var(--ui-bg) !important;
+    color: var(--ui-text-dimmed) !important;
+    border-right: 1px solid var(--ui-border) !important;
+}
+
+.ace_gutter-active-line {
+    color: var(--ui-text) !important;
+}
+
+.ace_gutter-active-line::before {
+    border: none !important;
+}
+
+.ace_marker-layer .ace_active-line {
+    border-top: 1px solid var(--ui-border-muted) !important;
+    border-bottom: 1px solid var(--ui-border-muted) !important;
+    background-color: var(--ui-bg-muted) !important;
+}
